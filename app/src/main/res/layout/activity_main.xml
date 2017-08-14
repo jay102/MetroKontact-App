@@ -7,176 +7,175 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.greenmouseacer.myapplication.MainActivity">
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <RelativeLayout
-        android:id="@+id/relLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+   
 
         <RelativeLayout
-            android:id="@+id/relLayoutTopbar"
+            android:id="@+id/relLayout"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_alignParentTop="true">
+            android:layout_height="match_parent">
 
-            <android.support.design.widget.AppBarLayout
+            <RelativeLayout
+                android:id="@+id/relLayoutTopbar"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@color/colorWhite">
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true">
 
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
+                <android.support.design.widget.AppBarLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
-            </android.support.design.widget.AppBarLayout>
+                    android:layout_height="80dp"
+                    android:background="@color/colorWhite">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+                </android.support.design.widget.AppBarLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayoutbody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relLayoutTopbar">
+
+
+                <LinearLayout
+                    android:id="@+id/top1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="YOUR REAL TIME"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="ONLINE BUSINESS"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="26dp"
+                        android:gravity="center"
+                        android:text="CONTACT"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:text="search any business listing"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="26sp"
+                        android:textStyle="normal" />
+
+                    <Spinner
+                        android:id="@+id/category"
+                        android:layout_width="280dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+
+                    <SearchView
+                        android:id="@+id/editText"
+                        android:layout_width="280dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:queryHint="Enter Keyword" />
+
+                    <Button
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button"
+                        android:text="SEARCH"></Button>
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/top1"
+                    android:background="#e3e3e3">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:layout_width="160dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/buttons"
+                            android:gravity="center"
+                            android:text="ABOUT"
+                            android:textColor="@color/colorWhite"></Button>
+
+                        <Button
+                            android:id="@+id/find_category"
+                            android:layout_width="160dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/buttons"
+                            android:gravity="center"
+                            android:text="find category"
+                            android:textColor="@color/colorWhite"></Button>
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
 
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/relLayoutbody"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/relLayoutTopbar">
-
-
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:background="@drawable/background"
-               android:orientation="vertical"
-               android:padding="16dp"
-               android:id="@+id/top1"
-               >
-
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="YOUR REAL TIME"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:textAllCaps="true"
-                   android:textSize="36sp"
-                   android:textColor="@color/colorWhite"
-                   android:textStyle="bold"/>
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="ONLINE BUSINESS"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:textAllCaps="true"
-                   android:textSize="36sp"
-                   android:textColor="@color/colorAccent"
-                   android:textStyle="bold"/>
-
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="CONTACT"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:textAllCaps="true"
-                   android:textSize="36sp"
-                   android:textColor="@color/colorWhite"
-                   android:textStyle="bold"
-                   android:layout_marginBottom="26dp"/>
-
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="search any business listing"
-                   android:gravity="center"
-                   android:layout_gravity="center"
-                   android:textAllCaps="true"
-                   android:textSize="26sp"
-                   android:textColor="@color/colorWhite"
-                   android:textStyle="normal"
-                   android:layout_marginBottom="20dp"/>
-
-               <Spinner
-                   android:id="@+id/category"
-                   android:layout_width="280dp"
-                   android:layout_height="50dp"
-                   android:ems="10"
-                   android:inputType="textPersonName"
-                   android:background="@drawable/edittext_background"
-                   android:layout_gravity="center"
-                   android:layout_marginBottom="10dp"/>
-
-
-
-               <SearchView
-                   android:id="@+id/editText"
-                   android:layout_width="280dp"
-                   android:layout_height="50dp"
-                   android:ems="10"
-                   android:inputType="textPersonName"
-                   android:queryHint="Enter Keyword"
-                   android:background="@drawable/edittext_background"
-                   android:layout_gravity="center"
-                   android:layout_marginBottom="10dp"/>
-
-               <Button
-                   android:layout_width="320dp"
-                   android:layout_height="50dp"
-                   android:text="SEARCH"
-                   android:layout_gravity="center"
-                   android:background="@drawable/button"></Button>
-
-
-           </LinearLayout>
-<LinearLayout
-
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:layout_below="@+id/top1"
-    android:gravity="center_horizontal"
-
-    android:layout_marginTop="30dp">
-
-    <Button
-        android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/buttons"
-        android:textColor="@color/colorWhite"
-        android:gravity="center"
-        android:text="ABOUT"></Button>
-
-    <Button
-        android:id="@+id/find_category"
-        android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:background="@drawable/buttons"
-        android:gravity="center"
-        android:textColor="@color/colorWhite"
-        android:text="find category"></Button>
-
-
-</LinearLayout>
-
-
-
-
-
-        </RelativeLayout>
-
-
-    </RelativeLayout>
-</ScrollView>
-
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RadioButton" />
 
 </android.support.design.widget.CoordinatorLayout>
