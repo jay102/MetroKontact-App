@@ -13,6 +13,7 @@ import android.widget.Toast;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class FindCategory extends AppCompatActivity {
+    String categoryName;
     ExpandableListView expandableListView;
     ExpandableListAdapter expandableListAdapter;
     List<String> expandableListTitle;
@@ -80,20 +82,12 @@ public class FindCategory extends AppCompatActivity {
 
 
         public class doIt extends AsyncTask<Void, Void, Void>{
-            String website;
+
 
             @Override
             protected Void doInBackground(Void... params) {
 
-                try {
-                    Document doc = Jsoup.connect("http://metrokontact.com").get();
-                    Element contents = doc.getElementsByClass("col-md-3 col-sm-6 col-xs-12");
-                    
-                    website = doc.text();
-                    
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+
 
                 return null;
             }
@@ -101,7 +95,7 @@ public class FindCategory extends AppCompatActivity {
             @Override
             protected void onPostExecute(Void aVoid) {
                 super.onPostExecute(aVoid);
-                Log.d("WEBSITES", website);
+
             }
         }
 
