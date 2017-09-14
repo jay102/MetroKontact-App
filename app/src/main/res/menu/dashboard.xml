@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_business"
+            android:title="DashBoard" />
+        <item
+        android:id="@+id/add_business"
+        android:icon="@drawable/ic_business"
+        android:title="Add Business" />
+        <item
+            android:id="@+id/activate_business"
+            android:icon="@drawable/ic_business"
+            android:title="Activate Business" />
+        <item
+            android:id="@+id/edit_business"
+            android:icon="@drawable/ic_account"
+            android:title="Edit Business" />
+        <item
+            android:id="@+id/delete_business"
+            android:icon="@drawable/ic_account"
+            android:title="Delete Business" />
+    </group>
+
+    <item android:title="Dashboard">
+        <menu>
+            <item
+                android:id="@+id/change_password"
+                android:icon="@drawable/ic_key"
+                android:title="Change Password" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_signout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

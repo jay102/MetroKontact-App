@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.greenmouseacer.myapplication.MainActivity">
+    tools:context="com.greenmousetech.MetroKontact.MainActivity">
 
    
 
@@ -26,9 +26,18 @@
                     android:background="@color/colorWhite">
 
                     <android.support.v7.widget.Toolbar
-                        android:id="@+id/toolbar"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+                        android:layout_height="match_parent"
+                        android:id="@+id/toolbar">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/logo"
+                            />
+
+                    </android.support.v7.widget.Toolbar>
                 </android.support.design.widget.AppBarLayout>
 
 
@@ -44,10 +53,14 @@
                 <LinearLayout
                     android:id="@+id/top1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/background"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/banner"
                     android:orientation="vertical"
-                    android:padding="16dp">
+                    android:padding="16dp"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -118,32 +131,27 @@
                         android:queryHint="Enter Keyword" />
 
                     <Button
-                        android:layout_width="320dp"
+                        android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:background="@drawable/button"
+                        android:id="@+id/search"
                         android:text="SEARCH"></Button>
 
-
-                </LinearLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@+id/top1"
-                    android:background="#e3e3e3">
 
 
                     <LinearLayout
 
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-
+                        android:layout_below="@+id/top1"
                         android:layout_marginTop="10dp"
-                        android:gravity="center_horizontal">
+                        android:gravity="center_horizontal"
+                       >
 
                         <Button
-                            android:layout_width="160dp"
+                            android:layout_width="140dp"
+                            android:id="@+id/about"
                             android:layout_height="60dp"
                             android:layout_gravity="center"
                             android:layout_marginLeft="10dp"
@@ -151,17 +159,20 @@
                             android:background="@drawable/buttons"
                             android:gravity="center"
                             android:text="ABOUT"
+                            android:textSize="16sp"
                             android:textColor="@color/colorWhite"></Button>
 
                         <Button
+
                             android:id="@+id/find_category"
-                            android:layout_width="160dp"
+                            android:layout_width="140dp"
                             android:layout_height="60dp"
                             android:layout_gravity="center"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/buttons"
                             android:gravity="center"
+                            android:textSize="16sp"
                             android:text="find category"
                             android:textColor="@color/colorWhite"></Button>
 
@@ -169,7 +180,13 @@
                     </LinearLayout>
 
 
-                </FrameLayout>
+                </LinearLayout>
+
+
+
+
+
+
 
 
             </RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "95927527941",
+    "firebase_url": "https://metrokontact-33015.firebaseio.com",
+    "project_id": "metrokontact-33015",
+    "storage_bucket": "metrokontact-33015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95927527941:android:400c57315d44ca23",
+        "android_client_info": {
+          "package_name": "com.example.greenmouseacer.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95927527941-qqoa21t549mdubbbq96tf6n8nbp4l129.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.greenmouseacer.myapplication",
+            "certificate_hash": "bb1e005a5f2d9c64556de45a28d2901f9081fab4"
+          }
+        },
+        {
+          "client_id": "95927527941-sbte1d8etso57lp1ecb2idpbnbi4091h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW97L5u_q0NPJeDGs0feiUEuzMBecMRiI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95927527941-sbte1d8etso57lp1ecb2idpbnbi4091h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.greenmousetech.MetroKontact.About">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/body">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:id="@+id/header"
+            android:layout_height="120dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/top"
+                android:paddingTop="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/colorWhite"
+                    android:id="@+id/back"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_below="@+id/top"
+                android:id="@+id/below">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABOUT "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="39sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/id_abt"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="US"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="39sp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/id_abt"/>
+            </RelativeLayout>
+            </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:background="@color/colorPrimaryDark"
+            android:padding="16dp">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"><LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"><RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"> <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/id_abt_top"
+       android:text="@string/about_metrokontact"
+       android:textSize="17sp"
+       android:textColor="@color/colorWhite"
+       android:paddingBottom="20dp"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/id_abt_top"
+           android:id="@+id/id_abt_top2"
+           android:text="Some of the importance of the platform are listed below;"
+           android:textSize="19sp"
+           android:textStyle="bold"
+           android:textColor="@color/colorAccent"
+           android:paddingBottom="10dp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/id_abt_top3"
+           android:layout_below="@+id/id_abt_top2"
+           android:text="@string/about_metrokontact2"
+           android:textSize="17sp"
+           android:textColor="@color/colorWhite"
+           android:paddingBottom="20dp"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/id_abt_top3"
+           android:id="@+id/id_abt_top4"
+           android:text="In addition, due to the nature of some individuals, that will register on this platform, and some of the users, the following security tips are pertinent for both users and service providers;
+"
+           android:textSize="19sp"
+           android:textStyle="bold"
+           android:textColor="@color/colorAccent"
+           android:paddingBottom="10dp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/id_abt_top4"
+           android:text="@string/about_metrokontact3"
+           android:textSize="17sp"
+           android:textColor="@color/colorWhite"
+           android:paddingBottom="20dp"/></RelativeLayout></LinearLayout></ScrollView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

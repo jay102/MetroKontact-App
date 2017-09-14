@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/ic_person"
+            android:title="About Us" />
+        <item
+            android:id="@+id/privacy_policy"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/disclaimer"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Disclaimer" />
+    </group>
+
+    <item android:title="Useful Links">
+        <menu>
+            <item
+                android:id="@+id/Fees_charge"
+                android:icon="@drawable/ic_hand"
+                android:title="Fees and Charge" />
+            <item
+                android:id="@+id/support"
+                android:icon="@drawable/ic_hand"
+                android:title="Support" />
+        </menu>
+    </item>
+
+</menu>

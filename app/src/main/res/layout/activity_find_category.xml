@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.greenmouseacer.myapplication.FindCategory">
+    tools:context="com.greenmousetech.MetroKontact.FindCategory">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,22 +12,30 @@
         <RelativeLayout
             android:id="@+id/topArea"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+           >
 
-            <android.support.design.widget.AppBarLayout
-                android:id="@+id/toolbar_appbar"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"></android.support.design.widget.AppBarLayout>
+
 
             <android.support.design.widget.AppBarLayout
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
-                android:layout_below="@+id/toolbar_appbar">
+                android:layout_height="100dp"
+                android:paddingTop="10dp"
+              >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
+                    android:layout_height="match_parent"
+                    >
+<ImageView
+    android:layout_width="wrap_content"
+    android:id="@+id/arrow_back"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_arrow_back"
+    android:paddingTop="7dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:tint="@color/colorWhite"/>
                     <TextView
                         android:id="@+id/search_and_listing"
                         android:layout_width="match_parent"
@@ -36,7 +43,7 @@
                         android:gravity="center"
                         android:text="SEARCH BUSINESS"
                         android:textColor="@color/colorWhite"
-                        android:textSize="35sp"
+                        android:textSize="30sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -46,7 +53,7 @@
                         android:gravity="center_horizontal"
                         android:text="LISTING"
                         android:textColor="@color/colorAccent"
-                        android:textSize="35sp"
+                        android:textSize="30sp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
