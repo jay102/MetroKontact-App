@@ -1,6 +1,7 @@
 package com.greenmousetech.MetroKontact.LoginRegister;
 
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -37,13 +38,16 @@ Button createacct;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        final ProgressDialog progressDialog = new ProgressDialog(RegisterActivity.this,
+                R.style.AppTheme_Dark_Dialog);
         fullname = (EditText) findViewById(R.id.reg_name);
         user_email = (EditText) findViewById(R.id.reg_email);
         userpassword = (EditText) findViewById(R.id.reg_pass);
         user_confirm_password = (EditText) findViewById(R.id.reg_confirm_pass);
         user_agree = (CheckBox) findViewById(R.id.agree);
         RegisterDialog = new AlertDialog.Builder(ctx).create();
-        RegisterDialog.setTitle("Urgent");
+        RegisterDialog.setTitle("");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
@@ -56,23 +60,27 @@ Button createacct;
         createacct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                progressDialog.setIndeterminate(true);
+                progressDialog.setMessage("Creating Account...");
+                progressDialog.show();
                 final String boxValue;
                 if(user_agree.isChecked()){
                     boxValue ="true"; }else{
                     boxValue = "false";
                 }
 
-                String url = "http://192.168.8.101/metrokontact/app/loginregister.php";
+                String url = "http://192.168.43.192/metrokontact/app/loginregister.php";
                 StringRequest registerRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String result) {
                         result = result.trim();
                         if(result.equals("Account was successfully created.Click on Login to list your business")){
-
+                            progressDialog.dismiss();
                             Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(ctx,LoginActivity.class);
                             startActivity(intent);
                         }else {
+                            progressDialog.dismiss();
                             RegisterDialog.setMessage(result);
                             RegisterDialog.show();
                         }
@@ -80,6 +88,7 @@ Button createacct;
                 }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        progressDialog.dismiss();
                         if(error instanceof NoConnectionError){
                             Toast.makeText(getApplicationContext(), "Mobile data Turned off or no Connection", Toast.LENGTH_LONG).show();
                         }

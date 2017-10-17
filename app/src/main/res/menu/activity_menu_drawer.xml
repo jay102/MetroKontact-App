@@ -3,17 +3,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/about_us"
-            android:icon="@drawable/ic_person"
-            android:title="About Us" />
+            android:id="@+id/contact_us"
+            android:icon="@drawable/ic_sent_mail"
+            android:title="Contact Us" />
         <item
             android:id="@+id/privacy_policy"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_privacy"
             android:title="Privacy Policy" />
         <item
             android:id="@+id/disclaimer"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_privacy"
             android:title="Disclaimer" />
+        <item
+            android:id="@+id/site_content"
+            android:icon="@drawable/ic_content"
+            android:title="Site Content" />
     </group>
 
     <item android:title="Useful Links">

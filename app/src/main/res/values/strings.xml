@@ -4,26 +4,43 @@
     <string name="secret_token"> eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE1MDUxNTIxODEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdCIsImp0aSI6ImYxZG85S2UyY29BNTNwbytBVkx1Wnd1XC9CWXBjcCtQa2hIMWszMU83U0YwPSIsIm5iZiI6MTUwNTE1MjE5MSwiZXhwIjoxNTA1MTU1NzgxLC
         JkYXRhIjp7InVzZXJuYW1lIjoiam9yZHVuampAZ21haWwuY29tIn19.TyQKYwwdL0y7vLn5RxcyjeLCo-uYmi_LMkrpdF605DEfxaqhdixuw65zBRzNzpPfUChhrkkgADDpV0UNXHCtSg</string>
     <string name="about_metrokontact">MetroKontact Internet Services is a Nigerian registered Online Service establishment
-        poised with the move to create the ease of doing businesses in the country.\n
-        The online platform is highly imperative for both the service providers and the users.</string>
-    <string name="about_metrokontact2">"1.	The platform helps to promote businesses and services for service providers."\n
+        that facilitates the ease of doing businesses by creating a platform through which individuals.\n
+        in need of any kind of service can reach out to any service provider that provides the exact service they are in need of.\n
+    "MetroKontact’s platform is highly recommended for both service providers and their clients/users."</string>
+    <string name="about_metrokontact2">"1.	Promotion businesses and services for service providers."\n
 
-"2.	The platform increases sale/services for service providers who are willing to offer door to door services to clients."\n
+"2.	Increase in sales/services for service providers who are willing to offer door to door services to clients."\n
 
-"3.	At a glance, users can see all the services providers around them on the map, make a market survey in terms of prices before reaching out to the selected services providers.\n
+"3.	At a glance, users can see all the service providers around them on the map.
+        MetroKontact’splatform enables users to make informed decisions from the wide range of service providers in terms of the services they offer before reaching out to contact them.\n
 
-"4.	The platform gives the users the comfort they deserve in getting their services providers easily from the map."\n
+"4.	Our platform gives the users the comfort they deserve in getting their desired service providers easily from the map."\n
 
-"5.	The platform helps to create jobs."\n
-
-"6.	The platform promotes internet banking."\n
+"5.	Our platform helps to create jobs opportunities."
 </string>
-    <string name="about_metrokontact3">"1.	Always tell people around you where you are going to meet your client."\n
+    <string name="reg">"1.Download the android application from google play store."\n
+
+"2.Register and login on www.metrokontact.com."\n
+
+"3.	Add your business."\n
+        "4.	Subscribe to activate your account."\n
+    </string>
+
+    <string name="security_tips">"1.	Always tell people around you where you are going to meet your client."\n
 
 "2.	Have a proper discussion and agreement with your client/service provider before initiating any business contract."\n
 
 "3.	Reject the business if the place of meeting is not favorable for either the client or the service provider."</string>
 
+    <string-array name="ReportType">
+        <item>Select One</item>
+        <item>Registered Business</item>
+        <item>Activated Business</item>
+        <item>Expired Business</item>
+    </string-array>
+    <string name="no_location_detected">
+        No location detected. Make sure location is enabled on the device.
+    </string>
     <string-array name="category_array">
         <item>All Categories</item>
         <item>Haulage</item>
@@ -51,7 +68,9 @@
         <item>Architects</item>
         <item>Business Consultants</item>
     </string-array>
-
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
 
     <string name="title_activity_dash_board">DashBoard</string>
 
@@ -60,229 +79,85 @@
 
     <string name="action_settings">Settings</string>
 
-    <string-array name="Haulage">
-        <item>Suckaway Evacuation</item>
-        <item>Container Haulage</item>
-        <item>Dpk/pms/Ago</item>
-        <item>General Goods</item>
-        <item>Toughing Vehicles</item>
-        <item>Hiab Services</item>
-        <item>Forklift Services</item>
-        <item>Satchet/Bottle Water</item>
-        <item>Suppliers</item>
-        <item>Automotive</item>
-    </string-array>
-    <string-array name="TechMarket">
-        <item>Tracking Device Tech</item>
-        <item>Security Alarm Tech</item>
-        <item>Solar Panel And Battery Sales</item>
-        <item>CCTV Tech</item>
-        <item>Automation and Remote Sensory Tech</item>
-        <item>Digital Display Tech</item>
-        <item>Automatic Transfer Switch Tech</item>
-    </string-array>
-    <string-array name="Agents">
-        <item>Office Space Agents</item>
-        <item>Real Estate Agents</item>
-        <item>House For Sell Agents</item>
-        <item>House For Rent Agents</item>
-        <item>Travel Agents</item>
-        <item>AutoMobile Agents</item>
-        <item>Shop Agents</item>
-        <item>Clearing And Forwarding Agents</item>
-        <item>General Brokers</item>
-        <item>Shipping Agents</item>
-        <item>Insurance Agents</item>
-    </string-array>
-    <string-array name="EventsServices">
-        <item>Bakery Services</item>
-        <item>Bakery Services</item>
-        <item>Event Planners</item>
-        <item>Cold Room Vans</item>
-        <item>Interior House Decorators </item>
-        <item>Fast Food Joints</item>
-        <item>Restaurants And Bars</item>
-        <item>Funeral Services</item>
-        <item>General Brokers</item>
-        <item>Ice Block Outlets</item>
-        <item>Ushering Services</item>
-        <item>Event Coverage</item>
-        <item>Events Halls</item>
-        <item>Publicity</item>
-        <item>Adverts And Promo</item>
-    </string-array>
-    <string-array name="ClothingBags">
-        <item>Sweaters</item>
-        <item>Real Estate Agents</item>
-        <item>Female Underwears</item>
-        <item>Children Wears</item>
-        <item>School Bags</item>
-        <item>Travelling Bags</item>
-        <item>Suits And Corporate Wears</item>
-        <item>Local Bags And Bead Making</item>
-        <item>Curtain Dealers</item>
-        <item>Textile Dealers</item>
-    </string-array>
-    <string-array name="PrivateTutors">
-        <item>Ict Tutors</item>
-        <item>Jamb Tutors</item>
-        <item>SSCE Tutors</item>
-        <item>Gmat and Gre Tutors</item>
-        <item>Tutorial Centers</item>
-        <item>Private Sec and Primary School</item>
-        <item>Adult Evening Schools</item>
-        <item>Professional Exam Tutors</item>
-        <item>Technical Training Centers</item>
-        <item>Vocational Training Centers</item>
-        <item>Creche</item>
-    </string-array>
-    <string-array name="SuppliesDistributors">
-        <item>Home And Office Electronics</item>
-        <item>FMCGS</item>
-        <item>Electrical Materials And Fitting</item>
-        <item>Engineering Equipments</item>
-        <item>AutoMobile Spareparts</item>
-        <item>Generator Spare Parts</item>
-        <item>Mechanical Spare Parts</item>
-        <item>Electrical Spare Parts</item>
-        <item>Scrap Dealers</item>
-        <item>Musical Instrument Sales</item>
-        <item>Cosmetic Dealers</item>
-        <item>Wine And Champagne Dealers</item>
-        <item>Phones And Accessories</item>
-        <item>Laptops And Accessories Dealers</item>
-        <item>Automobile Tyre Leaders</item>
-        <item>Wood And Charcoal Dealers</item>
-    </string-array>
-    <string-array name="TechniciansCraftman">
-        <item>Mechanic</item>
-        <item>Electronic/Gadget Repairs</item>
-        <item>Welders</item>
-        <item>Painters</item>
-        <item>BrickLayer</item>
-        <item>Woodworks</item>
-        <item>Tiles And Pop Crafts</item>
-        <item>Carpenters</item>
-        <item>Vulcanizers</item>
-        <item>Plumber</item>
-        <item>Aluminium Services</item>
-        <item>Iron Benders</item>
-        <item>Roofing Crafts</item>
-        <item>Pillar Casting Crafts</item>
-        <item>Water Treatment Services</item>
-        <item>Borehole Services</item>
-        <item>Tinkers And Panel Beaters</item>
-        <item>ScalFolders</item>
-        <item>Crane Operator</item>
-    </string-array>
-    <string-array name="EntertainmentFashion">
-        <item>Barbing Saloons</item>
-        <item>Disco Jockers</item>
-        <item>Master Of Ceremonies</item>
-        <item>Music Studios</item>
-        <item>Photo Studios</item>
-        <item>Film Crew Experts</item>
-        <item>Band Groups</item>
-        <item>Sound Engineers</item>
-        <item>General Brokers</item>
-        <item>Mail Tailor</item>
-        <item>Female Tailor</item>
-        <item>Fashion Designers</item>
-        <item>Boutiques</item>
-        <item>Stylist</item>
-        <item>Professional Photographers</item>
-    </string-array>
-    <string-array name="MedicalServices">
-        <item>Medical Labs</item>
-        <item>Pharmacy Outlets</item>
-        <item>Dental Services</item>
-        <item>Optical Services</item>
-        <item>Patent Drug Dealers</item>
-        <item>Vetinary Doctors</item>
-        <item>Licensed Drug Importers</item>
-        <item>Drug Manufacturers</item>
-        <item>Herbal Medecine</item>
-        <item>Animal Drug Sales</item>
-        <item>Medical Equipment And Materials</item>
-        <item>Orthopaedic Hospitals</item>
-        <item>Clinics</item>
-    </string-array>
-    <string-array name="GeneralBusinesses">
-        <item>Bookshops</item>
-        <item>Car Wash Services</item>
-        <item>Mattress Dealers</item>
-        <item>Jewelries Outlets</item>
-        <item>Sporting Materials</item>
-        <item>Furnitures</item>
-        <item>Gym Centers</item>
-        <item>Printing Press</item>
-        <item>Photocopying And Typesetting</item>
-        <item>Cooking Gas Refilling Stations</item>
-        <item>Cyber Cafe</item>
-        <item>Household And Gift Shops</item>
-        <item>Nannies And Baby Sitters</item>
-        <item>Carpets And Rug Dealers</item>
-    </string-array>
-    <string-array name="RentalServicesLaundry">
-        <item>Chairs And Capentary Rentals</item>
-        <item>Engineering Machines/Tools</item>
-        <item>Master Of Ceremonies</item>
-        <item>Musical Instrument Rentals</item>
-        <item>Dry  Cleaning and Laundry Services</item>
-        <item>Home/Office Cleaners</item>
-        <item>Utensil Rentals</item>
-        <item>Video and Camera Rental</item>
-        <item>Screen Projector Rental</item>
-        <item>Car Rentals</item>
-    </string-array>
-    <string-array name="Agriculture">
-        <item>Poultry Farms</item>
-        <item>Fish Farms</item>
-        <item>Rams And Cattle Farms</item>
-        <item>Other Farms</item>
-        <item>Fumigation Experts</item>
-        <item>Animal Food Sales</item>
-        <item>Fertilizer And Manure Sales</item>
-        <item>Egg Distributors</item>
-    </string-array>
-    <string-array name="OtherProfessionals">
-        <item>Sculptors</item>
-        <item>Fine Artist</item>
-        <item>Web And Application Developers</item>
-        <item>Graphic Designers And Calligraph</item>
-        <item>Signs And Prints Experts</item>
-        <item>Wallpaper Sales And Installation</item>
-    </string-array>
-    <string-array name="Companies">
-        <item>Construction</item>
-        <item>Engineering</item>
-        <item>Oil And Gas</item>
-        <item>FMCGS</item>
-        <item>Lease</item>
-        <item>Ict</item>
-        <item>PetroChemicals</item>
-        <item>Aluminium, Metal And Steel</item>
-        <item>Boutiques</item>
-        <item>Rubber And Plastic</item>
-        <item>Transportation</item>
-    </string-array>
-    <string-array name="EngineersTechnologists">
-        <item>Electrical</item>
-        <item>Civil</item>
-        <item>Mechanical</item>
-        <item>Electrical And Computer</item>
-        <item>Chemical</item>
-        <item>Software</item>
-        <item>Petroleum</item>
-        <item>Telecoms</item>
-    </string-array>
-    <string-array name="AvailableVehicleDrivers"></string-array>
-    <string-array name="Contractors"></string-array>
-    <string-array name="Architects"></string-array>
-    <string-array name="BusinessConsultants"></string-array>
-    <string-array name="ProjectManagers"></string-array>
-    <string-array name="HotelSuites"></string-array>
-    <string-array name="LegalServices"></string-array>
-    <string-array name="TaxiCabs"></string-array>
+
     <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy">
+        "If you require any more information or have any questions about "
+        "our privacy policy, please feel free to contact us by email at"
+        "info@metrokontact.com. At www.metrokontact.com we consider the "
+        "privacy of our visitors to be extremely important.This privacy policy"
+        "document describes in detail the types of personal information,"
+        "collected and recorded by www.metrokontact.com and how we use it.\n\n"
+
+        "Log Files.\n\n"
+
+        "Like many other web sites, www.metrokontact.com makes use of log files. These "
+        "files merely logs visitors to the site - usually a standard procedure for hosting"
+        "companies and a part of hosting services’ analytics.The information inside the log"
+        "files includes internet protocol (IP) addresses, browser type, internet service "
+        "provider (ISP),date/time stamp, referring/exit pages, and possibly the number of clicks."
+        "This information is used to analyze trends, administer the site, track user's movement"
+        "around the site,and gather demographic information.  IP addresses, and other such information"
+        "are not linked to any information that is personally identifiable."
+
+        "Cookies and Web Beacons.\n\n"
+        "www.metrokontact.com does not use cookies.\n"
+
+         "DoubleClick DART Cookie.\n\n"
+
+        "Google, as a third party vendor, uses cookies to serve ads on www.metrokontact.com. "
+        "Google's use of the DART cookie enables it to serve ads to our site's visitors based"
+        "upon their visit to www.metrokontact.com and other sites on the internet.Users may opt"
+        "out of the use of the DART cookie by visiting the Google ad and content network privacy  "
+        "policy at the following URL - https://www.google.com/privacy ads.html.\n\n"
+
+        "Our Advertising Partners.\n\n"
+
+        "Third-party ad servers or ad networks that appear on our web site use technology in their "
+        "respective advertisements and links that appear on www.metrokontact.com and which are sent "
+        "directly to your browser. They automatically receive your IP address when this occurs. Other "
+        " technologies (such as cookies, JavaScript, or Web Beacons) may also be used by our site's "
+        "third-party ad networks to measure the effectiveness of their advertising campaigns and/or"
+        "to personalize the advertising content that you see on the site.www.metrokontact.com has no"
+        "access to or control over these cookies that are used by third party advertisers.\n\n"
+
+        "Third Party Privacy Policies.\n\n"
+
+        "You should consult the respective privacy policies of these third-party ad servers for "
+        "more detailed information on their practices as well as for instructions about how to opt-out .\n"
+        "of certain practices. www.metrokontact.com's privacy policy does not apply to, "
+        "and we cannot control the activities of, such other advertisers or web sites. You may find a .\n"
+        "comprehensive listing of these privacy policies and their links here: Privacy Policy Links. "
+        "If you wish to disable cookies, you may do so through your individual browser options."
+        "More detailed information about cookie management with specific web browsers can be "
+        "found at the browsers\' respective websites.\n\n"
+
+        "Children\'s Information.\n\n"
+
+        "We believe it is important to provide added protection for children online. "
+        "We encourage parents and guardians to spend time online with their children to observe, "
+        "participate in and/or monitor and guide their online activity.www.metrokontact.com does"
+        "not knowingly collect any personally identifiable information from children under the age "
+        "of 13.If a parent or guardian believes that www.metrokontact.com.has in its database the  "
+        "personally identifiable information of a child under the age of 13,please contact us "
+        "immediately (using the contact in the first paragraph) and we will use our best efforts"
+        "to promptly remove such information from our records.\n"
+
+        "Online Privacy Policy Only.\n"
+
+        "This privacy policy applies only to our online activities and is valid for visitors"
+        "to our website and regarding information shared and/or collected there. This policy "
+        "does not apply to any information collected offline or via channels other than this "
+        "website.\n"
+
+        "Consent.\n"
+
+        "By using our website, you hereby consent to our privacy policy and agree to its terms.\n"
+
+        "Update.\n"
+
+        "This Privacy Policy was last updated on: Tuesday, September 13th, 2017. Should we update,"
+        "amend or make any changes to our privacy policy, those changes will be posted here.\n"
+    </string>
 </resources>

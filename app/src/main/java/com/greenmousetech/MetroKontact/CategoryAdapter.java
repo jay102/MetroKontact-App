@@ -3,8 +3,6 @@ package com.greenmousetech.MetroKontact;
 /**
  * Created by Green Mouse Acer on 14/08/2017.
  */
-import java.util.HashMap;
-import java.util.List;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
@@ -13,6 +11,9 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.HashMap;
+import java.util.List;
 
 public class CategoryAdapter extends BaseExpandableListAdapter {
 
@@ -102,53 +103,53 @@ public class CategoryAdapter extends BaseExpandableListAdapter {
         listTitleTextView.setTypeface(null, Typeface.BOLD);
 
         switch (listTitle){
-            case "Legal Services": categoryPhoto.setImageResource(R.drawable.ic_legal);
+            case "LEGAL SERVICES": categoryPhoto.setImageResource(R.drawable.ic_legal);
              break;
-            case "Haulage": categoryPhoto.setImageResource(R.drawable.ic_truck);
+            case "HAULAGE": categoryPhoto.setImageResource(R.drawable.ic_truck);
                 break;
-            case "Agents": categoryPhoto.setImageResource(R.drawable.ic_male);
+            case "AGENTS": categoryPhoto.setImageResource(R.drawable.ic_male);
                 break;
-            case "Taxi / Cabs": categoryPhoto.setImageResource(R.drawable.ic_taxi);
+            case "TAXI / CABS": categoryPhoto.setImageResource(R.drawable.ic_taxi);
                 break;
-            case "Tech Market": categoryPhoto.setImageResource(R.drawable.ic_network);
+            case "TECH MARKET": categoryPhoto.setImageResource(R.drawable.ic_network);
                 break;
-            case "Clothing and Bags": categoryPhoto.setImageResource(R.drawable.ic_briefcase);
+            case "CLOTHING AND BAGS": categoryPhoto.setImageResource(R.drawable.ic_briefcase);
                 break;
-            case "Supplies and Distributors": categoryPhoto.setImageResource(R.drawable.ic_truck);
+            case "SUPPLIES AND DISTRIBUTORS": categoryPhoto.setImageResource(R.drawable.ic_truck);
                 break;
-            case "Private Tutors & Tutorial Centers": categoryPhoto.setImageResource(R.drawable.ic_eye);
+            case "PRIVATE TUTORS & TUTORIAL CENTERS": categoryPhoto.setImageResource(R.drawable.ic_eye);
                 break;
-            case "Technicians & Craftman": categoryPhoto.setImageResource(R.drawable.ic_home);
+            case "TECHNICIANS & CRAFTMAN": categoryPhoto.setImageResource(R.drawable.ic_home);
                 break;
-            case "Entertainment & Fashion": categoryPhoto.setImageResource(R.drawable.ic_briefcase);
+            case "ENTERTAINMENT & FASHION": categoryPhoto.setImageResource(R.drawable.ic_briefcase);
                 break;
-            case "Events Services": categoryPhoto.setImageResource(R.drawable.ic_briefcase);
+            case "EVENTS SERVICES": categoryPhoto.setImageResource(R.drawable.ic_briefcase);
                 break;
-            case "Medical Services": categoryPhoto.setImageResource(R.drawable.ic_eye);
+            case "MEDICAL SERVICES": categoryPhoto.setImageResource(R.drawable.ic_eye);
                 break;
-            case "General Businesses": categoryPhoto.setImageResource(R.drawable.ic_home);
+            case "GENERAL BUSINESSES": categoryPhoto.setImageResource(R.drawable.ic_home);
                 break;
-            case "Rental Services & Laundry": categoryPhoto.setImageResource(R.drawable.ic_truck);
+            case "RENTAL SERVICES & LAUNDRY": categoryPhoto.setImageResource(R.drawable.ic_truck);
                 break;
-            case "Agriculture": categoryPhoto.setImageResource(R.drawable.ic_tree);
+            case "AGRICULTURE": categoryPhoto.setImageResource(R.drawable.ic_tree);
                 break;
-            case "Hotel & Suites": categoryPhoto.setImageResource(R.drawable.ic_hotel);
+            case "HOTEL & SUITES": categoryPhoto.setImageResource(R.drawable.ic_hotel);
                 break;
-            case "Other Professionals": categoryPhoto.setImageResource(R.drawable.ic_home);
+            case "OTHER PROFESSIONALS": categoryPhoto.setImageResource(R.drawable.ic_home);
                 break;
-            case "Project Managers": categoryPhoto.setImageResource(R.drawable.ic_send);
+            case "PROJECT MANAGERS": categoryPhoto.setImageResource(R.drawable.ic_send);
                 break;
-            case "Companies": categoryPhoto.setImageResource(R.drawable.ic_briefcase);
+            case "COMPANIES": categoryPhoto.setImageResource(R.drawable.ic_briefcase);
                 break;
-            case "Engineers & Technologists": categoryPhoto.setImageResource(R.drawable.ic_users);
+            case "ENGINEERS & TECHNOLOGISTS": categoryPhoto.setImageResource(R.drawable.ic_users);
                 break;
-            case "Available Vehicle Drivers": categoryPhoto.setImageResource(R.drawable.ic_car);
+            case "AVAILABLE VEHICLE DRIVERS": categoryPhoto.setImageResource(R.drawable.ic_car);
                 break;
-            case "Contractors": categoryPhoto.setImageResource(R.drawable.ic_male);
+            case "CONTRACTORS": categoryPhoto.setImageResource(R.drawable.ic_male);
                 break;
-            case "Architects": categoryPhoto.setImageResource(R.drawable.ic_gears);
+            case "ARCHITECTS": categoryPhoto.setImageResource(R.drawable.ic_gears);
                 break;
-            case "Business Consultants": categoryPhoto.setImageResource(R.drawable.ic_users);
+            case "BUSINESS CONSULTANTS": categoryPhoto.setImageResource(R.drawable.ic_users);
                 break;
         }
 

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tpbar"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Business Id"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:id="@+id/businessId"/>
+
+                    <Spinner
+                        android:id="@+id/business_to_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/buttonbackground"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/business_edit_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/buttonbackground"
+                        android:ems="8"
+                        android:layout_below="@+id/business_to_edit"
+                        android:hint=" "
+                        android:inputType="text" />
+                    <Button
+                        android:id="@+id/edit_business"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/background"
+                        android:text="Edit Business"
+                        android:textColor="@color/colorWhite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Business Name and address"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:id="@+id/businessNameandAddress"/>
+
+                    <EditText
+                        android:id="@+id/business_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/buttonbackground"
+                        android:ems="8"
+                        android:hint=" Business Name"
+                        android:inputType="textPersonName"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/business_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/buttonbackground"
+                        android:ems="8"
+                        android:hint=" Business Address"
+                        android:inputType="textPersonName"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Business Category and Type"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:id="@+id/businessCategoryandType"/>
+
+
+                    <Spinner
+                        android:id="@+id/business_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/buttonbackground"
+                        android:ems="8"
+                        android:hint=" Business Category"
+                        android:inputType="textPersonName"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:id="@+id/business_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/buttonbackground"
+                        android:ems="8"
+                        android:hint=" Business Type"
+                        android:inputType="textPersonName"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Business State and lga"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:id="@+id/businessStateandLga"/>
+
+
+                    <Spinner
+                        android:id="@+id/business_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/buttonbackground"
+                        android:ems="8"
+                        android:hint=" Business State"
+                        android:inputType="textPersonName"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/business_lga"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/buttonbackground"
+                        android:ems="8"
+                        android:hint=" Business LGA"
+                        android:inputType="textPersonName"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="PHONES LINES"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:id="@+id/phoneLines"/>
+
+
+                    <EditText
+                        android:id="@+id/phone1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/buttonbackground"
+                        android:ems="8"
+                        android:hint=" Phone 1"
+                        android:inputType="phone"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/phone2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/buttonbackground"
+                        android:ems="8"
+                        android:hint=" Phone 2"
+                        android:inputType="phone"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/website"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/buttonbackground"
+                        android:ems="8"
+                        android:hint=" Business Website(Optional)"
+                        android:inputType="textPersonName"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/business_services_render"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/buttonbackground"
+                        android:ems="8"
+                        android:hint=" Services Rendered"
+                        android:inputType="textLongMessage"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="POSITION"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:id="@+id/position"/>
+
+                    <CheckBox
+                        android:id="@+id/director"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Director"
+                        android:visibility="gone"/>
+
+                    <CheckBox
+                        android:id="@+id/other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background"
+                        android:text="Save"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

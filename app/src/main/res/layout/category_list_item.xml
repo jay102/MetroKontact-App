@@ -10,8 +10,8 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.CardView
-        android:layout_width="300dp"
-        android:layout_height="30dp"
+        android:layout_width="365dp"
+        android:layout_height="40dp"
         app:cardBackgroundColor="#f4f4f4">
 
         <RelativeLayout

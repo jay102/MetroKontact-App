@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#d3d3d3"
+  >
+
+    <TextView
+        android:id="@+id/info_business_name"
+        android:textColor="#444"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Name"/>
+
+    <TextView
+        android:id="@+id/info_services_render"
+        android:textColor="#444"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Services Rendered"/>
+
+    <TextView
+        android:id="@+id/info_website"
+        android:textColor="#444"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Website"/>
+
+    <TextView
+        android:id="@+id/info_phone"
+        android:textColor="#444"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Phone number"/>
+
+</LinearLayout>

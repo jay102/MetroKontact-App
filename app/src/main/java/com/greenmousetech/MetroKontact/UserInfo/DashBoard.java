@@ -1,6 +1,8 @@
 package com.greenmousetech.MetroKontact.UserInfo;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -12,20 +14,31 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
+
 import com.greenmousetech.MetroKontact.MainActivity;
+import com.greenmousetech.MetroKontact.MapActivity;
 import com.greenmousetech.MetroKontact.R;
+import com.greenmousetech.MetroKontact.SessionManagement;
+
+import static com.greenmousetech.MetroKontact.LoginRegister.LoginActivity.USERNAME;
 
 public class DashBoard extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
     private boolean viewIsAtHome;
+    SessionManagement session;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
+        session = new SessionManagement(getApplicationContext());
+        session.checkLogin();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        SharedPreferences loginPreferences = getSharedPreferences(USERNAME, Context.MODE_PRIVATE);
+        String fullname = loginPreferences.getString("PersonalName","");
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -34,10 +47,11 @@ public class DashBoard extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        View header = navigationView.getHeaderView(0);
+        TextView userEmail = (TextView) header.findViewById(R.id.user_email);
         navigationView.setNavigationItemSelectedListener(this);
         displayView(R.id.dashboard);
-
-
+        userEmail.setText(fullname);
     }
 
 
@@ -64,8 +78,14 @@ public class DashBoard extends AppCompatActivity
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.action_settings) {
+        if (id == R.id.map) {
+            Intent intent = new Intent(DashBoard.this, MapActivity.class);
+            startActivity(intent);
+
             return true;
+        }else if(id == R.id.homepage){
+            Intent intent = new Intent(DashBoard.this, MainActivity.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
@@ -96,8 +116,7 @@ public class DashBoard extends AppCompatActivity
                 break;
             case R.id.logout:
                 Toast.makeText(getApplicationContext(), "Logging Out Successfully..", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
+                session.logoutUser();
                 break;
             case R.id.change_password:
                 fragment = new change_password_fragment();
@@ -105,6 +124,14 @@ public class DashBoard extends AppCompatActivity
                 break;
             case R.id.delete_business:
                 fragment = new delete_business_fragment();
+                viewIsAtHome = false;
+                break;
+            case R.id.activate_business:
+                fragment = new activate_business_fragment();
+                viewIsAtHome = false;
+                break;
+            case R.id.edit_business:
+                fragment = new edit_business_fragment();
                 viewIsAtHome = false;
                 break;
         }
@@ -124,5 +151,21 @@ public class DashBoard extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
     }
 
+    @Override
+    protected void onRestart() {
+        session.checkLogin();
+        super.onRestart();
+    }
 
+    @Override
+    protected void onPause() {
+        session.checkLogin();
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        session.checkLogin();
+        super.onResume();
+    }
 }

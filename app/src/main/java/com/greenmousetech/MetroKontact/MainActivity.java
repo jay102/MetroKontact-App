@@ -2,6 +2,7 @@ package com.greenmousetech.MetroKontact;
 
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -26,7 +27,6 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
     Button findCategory, about, search;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+
 
         final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -67,7 +69,8 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
 
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view1);
+        navigationView.setNavigationItemSelectedListener(this);
 
         Spinner spinner = (Spinner) findViewById(R.id.category);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -131,20 +134,32 @@ about = (Button) findViewById(R.id.about);
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
 
-         if (id == R.id.about_us) {
-
+        if (id == R.id.contact_us) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://metrokontact.com/contact.php"));
+            startActivity(browserIntent);
         } else if (id == R.id.support) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://metrokontact.com/Support.php"));
+            startActivity(browserIntent);
 
         } else if (id == R.id.disclaimer) {
-
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://metrokontact.com/disclaimers.php"));
+            startActivity(browserIntent);
         } else if (id == R.id.Fees_charge) {
-
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://metrokontact.com/fees.php"));
+            startActivity(browserIntent);
         } else if (id == R.id.privacy_policy) {
-
+            Intent intent = new Intent(MainActivity.this, privacy_policy.class);
+            startActivity(intent);
+        }else if (id == R.id.site_content) {
+            Intent intent = new Intent(MainActivity.this, FindCategory.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.END);
         return true;
     }
+
+
+
 }
