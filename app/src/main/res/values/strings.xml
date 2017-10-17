@@ -7,12 +7,12 @@
         that facilitates the ease of doing businesses by creating a platform through which individuals.\n
         in need of any kind of service can reach out to any service provider that provides the exact service they are in need of.\n
     "MetroKontact’s platform is highly recommended for both service providers and their clients/users."</string>
-    <string name="about_metrokontact2">"1.	Promotion businesses and services for service providers."\n
+    <string name="about_metrokontact2">"1.	Promoting businesses and services for service providers."\n
 
-"2.	Increase in sales/services for service providers who are willing to offer door to door services to clients."\n
+"2.	Increases sales/services for service providers who are willing to offer door to door services to clients."\n
 
-"3.	At a glance, users can see all the service providers around them on the map.
-        MetroKontact’splatform enables users to make informed decisions from the wide range of service providers in terms of the services they offer before reaching out to contact them.\n
+"3.	At a glance, users can see all the service providers around them on the map."
+        "MetroKontact’splatform enables users to make informed decisions from the wide range of service providers in terms of the services they offer before reaching out to contact them."\n
 
 "4.	Our platform gives the users the comfort they deserve in getting their desired service providers easily from the map."\n
 
@@ -30,7 +30,13 @@
 
 "2.	Have a proper discussion and agreement with your client/service provider before initiating any business contract."\n
 
-"3.	Reject the business if the place of meeting is not favorable for either the client or the service provider."</string>
+"3.	Reject the business if the place of meeting is not favorable for you as either a client or a service provider."</string>
+
+    <string name="payment_tips">"1.Login with your credentials online."\n
+
+"2.Navigate to the Purchase Activation Code Section and follow the instructions."\n
+
+"3.After Successful payment, Login on the app and continue to use our service and find your Activated business on the map."</string>
 
     <string-array name="ReportType">
         <item>Select One</item>
@@ -100,11 +106,10 @@
         "This information is used to analyze trends, administer the site, track user's movement"
         "around the site,and gather demographic information.  IP addresses, and other such information"
         "are not linked to any information that is personally identifiable."
+        "Cookies and Web Beacons.\n"
+        "www.metrokontact.com does use cookies.\n\n"
 
-        "Cookies and Web Beacons.\n\n"
-        "www.metrokontact.com does not use cookies.\n"
-
-         "DoubleClick DART Cookie.\n\n"
+         "DoubleClick DART Cookie.\n"
 
         "Google, as a third party vendor, uses cookies to serve ads on www.metrokontact.com. "
         "Google's use of the DART cookie enables it to serve ads to our site's visitors based"
@@ -151,11 +156,11 @@
         "does not apply to any information collected offline or via channels other than this "
         "website.\n"
 
-        "Consent.\n"
+        "Consent.\n\n"
 
         "By using our website, you hereby consent to our privacy policy and agree to its terms.\n"
 
-        "Update.\n"
+        "Update.\n\n"
 
         "This Privacy Policy was last updated on: Tuesday, September 13th, 2017. Should we update,"
         "amend or make any changes to our privacy policy, those changes will be posted here.\n"

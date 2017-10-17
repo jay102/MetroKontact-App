@@ -27,6 +27,10 @@
     <item android:title="Dashboard">
         <menu>
             <item
+                android:id="@+id/purchase_activation_code"
+                android:icon="@drawable/ic_key"
+                android:title="Purchase Activation Code" />
+            <item
                 android:id="@+id/change_password"
                 android:icon="@drawable/ic_key"
                 android:title="Change Password" />

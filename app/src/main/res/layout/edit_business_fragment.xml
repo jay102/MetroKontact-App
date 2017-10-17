@@ -51,6 +51,7 @@
                         android:id="@+id/business_edit_address"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
+                        android:padding="10dp"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
@@ -87,20 +88,22 @@
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Business Name"
+                        android:padding="10dp"
+                        android:hint="Business Name"
                         android:inputType="textPersonName"
                         android:visibility="gone"/>
 
-                    <EditText
+                    <AutoCompleteTextView
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
                         android:id="@+id/business_address"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
+                        android:layout_height="52dp"
+                        android:visibility="gone"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/buttonbackground"
-                        android:ems="8"
-                        android:hint=" Business Address"
-                        android:inputType="textPersonName"
-                        android:visibility="gone"/>
+                        android:ems="15"
+                       />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -116,25 +119,27 @@
                         android:id="@+id/businessCategoryandType"/>
 
 
-                    <Spinner
+                    <EditText
                         android:id="@+id/business_category"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Business Category"
+                        android:padding="10dp"
+                        android:hint="Business Category"
                         android:inputType="textPersonName"
                         android:visibility="gone"/>
 
-                    <Spinner
+                    <EditText
                         android:id="@+id/business_type"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Business Type"
+                        android:padding="10dp"
+                        android:hint="Business Type"
                         android:inputType="textPersonName"
                         android:visibility="gone"/>
 
@@ -152,14 +157,15 @@
                         android:id="@+id/businessStateandLga"/>
 
 
-                    <Spinner
+                    <EditText
                         android:id="@+id/business_state"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Business State"
+                        android:padding="10dp"
+                        android:hint="Business State"
                         android:inputType="textPersonName"
                         android:visibility="gone"/>
 
@@ -170,7 +176,8 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Business LGA"
+                        android:padding="10dp"
+                        android:hint="Business LGA"
                         android:inputType="textPersonName"
                         android:visibility="gone"/>
 
@@ -195,7 +202,8 @@
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Phone 1"
+                        android:padding="10dp"
+                        android:hint="Phone 1"
                         android:inputType="phone"
                         android:visibility="gone"/>
 
@@ -206,7 +214,8 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Phone 2"
+                        android:padding="10dp"
+                        android:hint="Phone 2"
                         android:inputType="phone"
                         android:visibility="gone"/>
 
@@ -217,7 +226,8 @@
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Business Website(Optional)"
+                        android:padding="10dp"
+                        android:hint="Business Website(Optional)"
                         android:inputType="textPersonName"
                         android:visibility="gone"/>
 
@@ -228,7 +238,8 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Services Rendered"
+                        android:padding="10dp"
+                        android:hint="Services Rendered"
                         android:inputType="textLongMessage"
                         android:visibility="gone"/>
 

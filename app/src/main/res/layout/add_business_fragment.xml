@@ -45,18 +45,19 @@
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Business Name"
+                        android:padding="10dp"
+                        android:hint="Business Name"
                         android:inputType="textPersonName" />
-
-                    <EditText
-                        android:id="@+id/business_address"
+                    <AutoCompleteTextView
+                        android:id="@+id/addBizCompleteTextView"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
+                        android:layout_height="52dp"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/buttonbackground"
-                        android:ems="8"
-                        android:hint=" eg.2 Aiyetoro Street,Surulere,Lagos,Nigeria"
-                        android:inputType="textPersonName" />
+                        android:ems="15"
+                        android:padding="5dp"
+                        android:hint="eg.2 Aiyetoro Street,Aguda,Surulere,Lagos,Nigeria"></AutoCompleteTextView>
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -102,7 +103,7 @@
                         android:textStyle="bold" />
 
 
-                    <EditText
+                    <Spinner
                         android:id="@+id/business_state"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
@@ -119,7 +120,8 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Business LGA"
+                        android:padding="10dp"
+                        android:hint="Business LGA"
                         android:inputType="textPersonName" />
 
                     <TextView
@@ -151,7 +153,8 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Phone 2"
+                        android:padding="10dp"
+                        android:hint="Phone 2"
                         android:inputType="phone" />
 
                     <EditText
@@ -161,7 +164,8 @@
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Business Website(Optional)"
+                        android:padding="10dp"
+                        android:hint="Business Website(Optional)"
                         android:inputType="textPersonName" />
 
                     <EditText
@@ -171,7 +175,8 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/buttonbackground"
                         android:ems="8"
-                        android:hint=" Services Rendered"
+                        android:padding="10dp"
+                        android:hint="Services Rendered"
                         android:inputType="textLongMessage" />
 
                     <TextView

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.greenmousetech.MetroKontact.privacy_policy"
+    tools:context="com.greenmousetech.MetroKontact1.privacy_policy"
     tools:showIn="@layout/privacy_policy">
 
     <TextView

@@ -20,7 +20,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/tpbar"
                 android:orientation="vertical"
                 android:padding="10dp">
 
@@ -51,8 +50,9 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/buttonbackground"
                     android:ems="8"
+                    android:padding="10dp"
                     android:layout_below="@+id/registration"
-                    android:hint=" Activation Code"
+                    android:hint="Activation Code"
                     android:inputType="text" />
                 <EditText
                     android:id="@+id/business_activate_address"
@@ -61,6 +61,7 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/buttonbackground"
                     android:ems="8"
+                    android:padding="10dp"
                     android:layout_below="@+id/business_activation_code"
                     android:hint=" "
                     android:visibility="gone"

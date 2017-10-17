@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.greenmousetech.MetroKontact">
-    <supports-screens android:smallScreens="true"
-        android:normalScreens="true"
-        android:largeScreens="true"
-        android:xlargeScreens="true"
-        android:anyDensity="true" />
-
+    package="com.greenmousetech.MetroKontact1">
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="com.androidtutorialpoint.mymapsappsdirection.permission.MAPS_RECEIVE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -27,17 +22,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <supports-screens android:xlargeScreens="true" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.greenmousetech.MetroKontact1.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FindCategory" />
-        <activity android:name=".LoginRegister.LoginActivity" />
-        <activity android:name=".MapActivity" />
+        <activity android:name="com.greenmousetech.MetroKontact1.FindCategory" />
+        <activity android:name="com.greenmousetech.MetroKontact1.LoginRegister.LoginActivity" />
+        <activity android:name="com.greenmousetech.MetroKontact1.MapActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -46,26 +41,35 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".About" />
+        <activity android:name="com.greenmousetech.MetroKontact1.About" />
         <activity
-            android:name=".UserInfo.DashBoard"
+            android:name="com.greenmousetech.MetroKontact1.UserInfo.DashBoard"
             android:label="@string/title_activity_dash_board"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".LoginRegister.RegisterActivity"
-            android:parentActivityName=".LoginRegister.LoginActivity">
+            android:name="com.greenmousetech.MetroKontact1.LoginRegister.RegisterActivity"
+            android:parentActivityName="com.greenmousetech.MetroKontact1.LoginRegister.LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.greenmousetech.MetroKontact.LoginRegister.LoginActivity" />
+                android:value="com.greenmousetech.MetroKontact1.LoginRegister.LoginActivity" />
         </activity>
         <activity
-            android:name=".privacy_policy"
+            android:name="com.greenmousetech.MetroKontact1.privacy_policy"
             android:label="@string/title_activity_privacy_policy"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.greenmousetech.MetroKontact.MainActivity" />
+                android:value="com.greenmousetech.MetroKontact1.MainActivity" />
         </activity>
+        <service
+            android:name="com.greenmousetech.MetroKontact1.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
     </application>
 
 </manifest>
